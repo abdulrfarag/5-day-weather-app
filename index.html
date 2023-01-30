@@ -10,77 +10,104 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="current-info">
-
-            <div class="date-container">
-                <div class="time" id="time">
-                    00:30 <span id="am-pm">PM</span>
-                </div>
-                <div class="date" id="date">
-                    sat, 18 nov
-                </div>
-
-                <div class="others" id="current-weather-items">
-                    
-                    
-                </div>
-            </div>
-
-            <div class="place-container">
-                <div class="time-zone" id="time-zone">usa/chicago</div>
-                <div id="country" class="country">usa</div>
-            </div>
-        </div>
-
-        
-    </div>
-
-    <div class="future-forecast">
-        <div class="today" id="current-temp">
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-            <div class="other">
-                <div class="day">Monday</div>
-                <div class="temp">Night - 45&#176; F</div>
-                <div class="temp">Day - 80&#176; F</div>
-            </div>
-        </div>
-
-        <div class="weather-forecast" id="weather-forecast">
-            <div class="weather-forecast-item">
-                <div class="day">Tue</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 40&#176; f</div>
-                <div class="temp">Day - 50&#176; f</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Wed</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; f</div>
-                <div class="temp">Day - 35.6&#176; f</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Thu</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 65&#176; f</div>
-                <div class="temp">Day - 70&#176; f</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Fri</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 62&#176; f</div>
-                <div class="temp">Day - 68&#176; f</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Sat</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 53&#176; f</div>
-                <div class="temp">Day - 56&#176; f</div>
-            </div>
-
+    <div class="header">
+        <h1>Weather Dashboard</h1>
+        <div>
+            <input type="text" name="" id="input" placeholder="Enter city name">
+            <button id="search" onclick="searchByCity()">Search</button></input>
         </div>
     </div>
-    
-    <script src="/assets/js/script.js"></script>
+
+    <main>        
+        <div class="weather">
+            <h2 id="city">Chicago/IL</h2>
+            <div class="temp-box">
+                <img src="weathericon.png" alt="" id="img">
+                <p id="temperature">26 °F</p>
+            </div>
+            <span id="clouds">Broken Clouds</span>
+        </div>
+        <div class="divider1"></div>
+
+        <div class="forecstH">
+            <p class="cast-header">Upcoming forecast</p>
+            <div class="templist">
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>50 °F / 50 °F</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>50 °F / 50 °F</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>50 °F / 50 °F</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>50 °F / 50 °F</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>50 °F / 50 °F</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="forecstD">
+        <div class="divider2"></div>
+        <p class="cast-header"> Next 4 days forecast</p>
+        <div class="weekF">
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>75 °F / 75 °F</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>75 °F / 75 °F</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun oct 03 2022</p>
+                <p>75 °F / 75 °F</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun oct 03 2022</p>
+                <p>75 °F / 71 °F</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/"></script>
 </body>
+
 </html>
