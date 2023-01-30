@@ -11,7 +11,7 @@ HTML, CSS, JAVASCRIPT
 
 ## repo
 
-git@github.com:abdulrfarag/5-day-weather-app.git
+https://git@github.com:abdulrfarag/5-day-weather-app.git
 
 ## live link 
 http://127.0.0.1:5500/index.html
