@@ -1,9 +1,9 @@
 # 5-day-weather-app
 5 day forecast 
 
-The following image shows the web application's appearance and functionality:
+The following video shows the web application's appearance and functionality:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Weather%20Dashboard%20(1).webm)
+![The weather app includes a search button to search for a city.](./Weather%20Dashboard%20(1).webm)
 
 ## technologies
 
